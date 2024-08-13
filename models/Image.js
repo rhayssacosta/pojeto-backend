@@ -12,7 +12,7 @@ const Image = configDB.define('Image', {
         allowNull: false,
     }
 }, {
-    tableName: 'products',
+    tableName: 'image',
     timestamps: true,
 });
 
