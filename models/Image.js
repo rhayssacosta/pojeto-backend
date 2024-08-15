@@ -10,7 +10,7 @@ const Image = configDB.define('Image', {
     url: {
         type: DataTypes.STRING(100),
         allowNull: false,
-    }
+    },
 }, {
     tableName: 'image',
     timestamps: true,

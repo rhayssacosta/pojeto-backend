@@ -26,6 +26,22 @@ const User = configDB.define('User', {
         type: DataTypes.STRING(100),
         allowNull: false,
     },
+    address: {
+        type: DataTypes.STRING(50),
+        allowNull: false,
+    },
+    district: {
+        type: DataTypes.STRING(50),
+        allowNull: false,
+    },
+    city: {
+        type: DataTypes.STRING(50),
+        allowNull: false,
+    }, 
+    complement: {
+        type: DataTypes.STRING(50),
+        allowNull: true,
+    },
 }, {
     tableName: 'users',
     timestamps: true,

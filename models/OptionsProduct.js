@@ -29,7 +29,7 @@ const OptionsProduct = configDB.define('OptionsProduct', {
     values: {
         type: DataTypes.STRING(200),
         allowNull: true,
-    }
+    },
 }, {
     tableName: 'options_product',
     timestamps: true,
