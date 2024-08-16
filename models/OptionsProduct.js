@@ -1,6 +1,6 @@
 
-import { DataTypes } from "sequelize";
-import configDB from "../config/db.js";
+const { DataTypes } = require('sequelize');
+const configDB  = require('../config/db.js')
 
 const OptionsProduct = configDB.define('OptionsProduct', {
     product_id: {
@@ -35,4 +35,4 @@ const OptionsProduct = configDB.define('OptionsProduct', {
     timestamps: true,
 });
 
-export default OptionsProduct;
+module.exports = OptionsProduct;

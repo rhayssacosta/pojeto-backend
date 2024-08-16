@@ -1,6 +1,6 @@
 
-import { DataTypes } from 'sequelize';
-import configDB from '../config/db.js';
+const { DataTypes } = require('sequelize');
+const configDB  = require('../config/db.js')
 
 const Sale = configDB.define('Sale', {
     total: {
@@ -25,4 +25,4 @@ const Sale = configDB.define('Sale', {
     timestamps: true,
 });
 
-export default Sale;
+module.exports = Sale;

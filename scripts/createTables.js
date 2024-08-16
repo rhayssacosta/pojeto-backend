@@ -1,5 +1,5 @@
 
-import configDB from '../config/db.js';
+const configDB = require('../config/db.js');
 
 async function createTables() {
     try {
@@ -15,4 +15,4 @@ async function createTables() {
     }
 }
 
-export default createTables;
+module.exports = createTables;

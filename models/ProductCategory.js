@@ -1,6 +1,6 @@
 
-import { DataTypes } from 'sequelize';
-import configDB from '../config/db.js';
+const { DataTypes } = require('sequelize');
+const configDB  = require('../config/db.js')
 
 const ProductCategory = configDB.define('ProductCategory', {
     product_id: {
@@ -18,4 +18,4 @@ const ProductCategory = configDB.define('ProductCategory', {
     timestamps: true,
 });
 
-export default ProductCategory;
+module.exports = ProductCategory;

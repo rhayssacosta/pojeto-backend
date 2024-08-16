@@ -1,11 +1,11 @@
 
-import User from '../models/User.js';
-import Product from '../models/Product.js';
-import ProductCategory from '../models/ProductCategory.js';
-import OptionsProduct from '../models/OptionsProduct.js';
-import ImageProduct from '../models/ImageProduct.js';
-import Image from '../models/Image.js';
-import Category from '../models/Category.js';
+const User = require('../models/User.js')
+const Product = require('../models/Product.js')
+const ProductCategory = require('../models/ProductCategory.js');
+const OptionsProduct = require('../models/OptionsProduct.js');
+const ImageProduct = require('../models/ImageProduct.js');
+const PImage = require('../models/Image.js');
+const Category = require('../models/Category.js');
 
 async function insertData() {
     try {
@@ -129,4 +129,4 @@ async function insertData() {
     }
 }
 
-export default insertData;
+module.exports = insertData;

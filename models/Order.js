@@ -1,6 +1,6 @@
 
-import { DataTypes } from 'sequelize';
-import configDB from '../config/db.js';
+const { DataTypes } = require('sequelize');
+const configDB  = require('../config/db.js')
 
 const Order = configDB.define('Order', {
     sale_id: {
@@ -18,4 +18,4 @@ const Order = configDB.define('Order', {
     timestamps: true,
 });
 
-export default Order;
+module.exports = Order;

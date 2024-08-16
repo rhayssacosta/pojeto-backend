@@ -1,6 +1,6 @@
 
-import configDB from "../config/db.js";
-import mysql from "mysql2/promise";
+const configDB = require('../config/db.js');
+const mysql = require('mysql2/promise');
 
 async function createDatabase() {
     try {
@@ -19,6 +19,6 @@ async function createDatabase() {
     } catch (error) {
         console.error('Create: Erro ao conectar no DB:', error);
     }
-}
+};
 
-export default createDatabase;
+module.exports = createDatabase;

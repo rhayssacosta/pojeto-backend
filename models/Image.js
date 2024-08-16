@@ -1,6 +1,6 @@
 
-import { DataTypes } from "sequelize";
-import configDB from "../config/db.js";
+const { DataTypes } = require('sequelize');
+const configDB  = require('../config/db.js')
 
 const Image = configDB.define('Image', {
     name: {
@@ -16,4 +16,4 @@ const Image = configDB.define('Image', {
     timestamps: true,
 });
 
-export default Image;
+module.exports = Image;

@@ -1,7 +1,8 @@
 
-import { DataTypes } from 'sequelize';
-import configDB from '../config/db.js';
+const { DataTypes } = require('sequelize');
+const configDB  = require('../config/db.js')
 
+//alterar 
 const User = configDB.define('User', {
     username: {
         type: DataTypes.STRING(100),
@@ -47,4 +48,5 @@ const User = configDB.define('User', {
     timestamps: true,
 });
 
-export default User;
+module.exports = User;
+

@@ -1,8 +1,7 @@
 
-import { Sequelize } from "sequelize";
-import dotenv from 'dotenv';
+const { Sequelize } = require('sequelize');
+require('dotenv').config();
 
-dotenv.config();
 
 const configDB = new Sequelize(
     process.env.DB_NAME,
@@ -16,4 +15,4 @@ const configDB = new Sequelize(
 
 console.log('DB configurado!')
 
-export default configDB;
+module.exports = configDB;
